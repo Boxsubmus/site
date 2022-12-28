@@ -13,7 +13,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-de2969fe.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-a4cf6019.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/tech/_page.svelte-1ade0f5b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Footer-99416c22.js">
 	</head>
 	<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -28,7 +28,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarColor03"><ul class="navbar-nav me-auto"><li class="nav-item"><a class="nav-link " href="games">Games
               <span class="visually-hidden">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link " href="tech">Technologies
+          <li class="nav-item"><a class="nav-link active" href="tech">Technologies
               <span class="visually-hidden">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link " href="team">Team
               <span class="visually-hidden">(current)</span></a></li></ul>
@@ -46,16 +46,24 @@
                 </a></li></ul></div></div></nav>
 
 <br><br><br><br>
-<div class="text-center"><img src="LogoOutline.png" style="width: 100%; max-width: 600px;">
-    <br>
-    <h1>games &amp; software made from nothing but boxes and glue.</h1>
-    <p>Boxsubmus is a boutique game studio founded in mid 2021 in Indiana.
+<div class="container"><div class="row"><h1 id="typography">Technologies</h1></div>
 
-        <br><br>
-        We develop custom tools to create our games. You can read about them on our <a href="tech">Technologies</a> page.
-        
-    </p></div>
-<br><br><br>
+    <hr>
+    <div class="row"><div class="col"><h3>Trinkit Engine &amp; Software Development Kit</h3>
+            <hr>
+            <div class="text-center"><img src="tech/Trinkit_LogoBanner.png" style="max-width: 100%"></div>
+            <hr>
+            <p>Trinkit is a cross-platform rhythm &amp; pixel art game engine used by Boxsubmus to create 2D games with the simplicity of GameMaker and the flexibility of Unity.
+                <br><br>
+                Trinkit utilizes the lean on minimalism and simplicity of game development. Originally created for a fan-game, Trinkit is being developed primarily for use in rhythm and 2D retro games.
+                <br><br>
+                Trinkit was made to be all-in-one. Featuring a sprite editor, code editor, and runtime.
+                <br><br>
+                Stay tuned for more updates!
+            </p></div>
+        <div class="col"><div class="text-center"><img src="tech/Trinkit_Preview.png" style="width: 100%; max-width: 528px;">
+                <h5>TrinkitSDK Example</h5></div></div></div>
+    <br><br></div>
 
 <footer class="bg-light text-center fixed-bottom text-lg-start">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">Copyright © 2021-2022 Boxsubmus
@@ -63,16 +71,16 @@
     </footer>
 
 
-		<script type="module" data-sveltekit-hydrate="12kswiq">
+		<script type="module" data-sveltekit-hydrate="14q4lfn">
 			import { start } from "./_app/immutable/start-2f842b82.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="12kswiq"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="14q4lfn"]').parentNode,
 				version: "1672188215905",
 				hydrate: {
-					node_ids: [0, 2],
+					node_ids: [0, 6],
 					data: [null,null],
 					form: null
 				}
